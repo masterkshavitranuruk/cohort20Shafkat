@@ -23,13 +23,12 @@ public void test1(){
   //Parameterization Test
   //dataProvider
   //TestNG ReRun failed Test cases
-
-
-
-
-
   //Parallel Execution
   //TestNG ListenersClass
+
+
+
+
 //reporting
 
 }

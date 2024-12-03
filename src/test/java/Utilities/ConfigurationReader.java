@@ -11,13 +11,12 @@ public class ConfigurationReader {
   public static Properties prop; // NULL
      // public static WebDriver driver;
 
-
   //Properties
   //FileInputStream -- opens connection to the file
 
  static {
    try{
-     String filePath = "src/test/resources/configuration.properties";  // file path
+     String filePath = "src/test/resources/configurationFolder/configuration.properties";  // file path
      FileInputStream fis = new FileInputStream(filePath);  // opens connection to the file
 
       prop = new Properties();  // instantiating the object from line 8
@@ -26,7 +25,6 @@ public class ConfigurationReader {
       e.printStackTrace();
    }
  }
-
 
  public static String getProperty(String keyName){
    return prop.getProperty(keyName);

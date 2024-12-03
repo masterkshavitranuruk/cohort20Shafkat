@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    
+    <listeners>
+        <listener class-name="Utilities.ListenersTestNG"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="/Users/techcircle_2/Documents/Cohort20Workspace/Cohor20_FrameWork">
+        <classes>
+            <class name="TestCases.TestingListenerExp" />
+        </classes>
+    </test>
+</suite>
