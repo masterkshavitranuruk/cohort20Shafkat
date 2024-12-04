@@ -16,7 +16,7 @@ public class ConfigurationReader {
 
  static {
    try{
-     String filePath = "src/test/resources/configurationFolder/configuration.properties";  // file path
+     String filePath = Constants.configPropFilePath;  // file path
      FileInputStream fis = new FileInputStream(filePath);  // opens connection to the file
 
       prop = new Properties();  // instantiating the object from line 8

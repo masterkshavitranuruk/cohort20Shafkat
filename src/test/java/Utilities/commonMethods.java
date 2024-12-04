@@ -4,6 +4,7 @@ import Pages.HomePage;
 import net.datafaker.Faker;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.devtools.v85.page.Page;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
 
@@ -24,7 +25,7 @@ import java.util.Set;
 import javax.imageio.ImageIO;
 
 
-public class commonMethods extends BaseClass {
+public class commonMethods extends PageInitializer {
 
 
  // HomePage hp = new HomePage();
@@ -164,6 +165,7 @@ public static void clickOnNav(String option, List<WebElement> navbar){
   for(WebElement eachOption : navbar){
     if(eachOption.getText().contains(option)){
       eachOption.click();
+      break;
     }
   }
   tinyWait();

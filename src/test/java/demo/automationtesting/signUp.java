@@ -1,11 +1,12 @@
 package demo.automationtesting;
 
-import org.junit.Before;
-import org.junit.Ignore;
-import org.junit.Test;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Ignore;
+import org.testng.annotations.Test;
 
 import java.time.Duration;
 
@@ -13,7 +14,7 @@ public class signUp {
 
   WebDriver driver;
 
-@Before
+@BeforeMethod
 public void setUp(){
     driver = new ChromeDriver();
     driver.get("https://demo.automationtesting.in/Index.html");

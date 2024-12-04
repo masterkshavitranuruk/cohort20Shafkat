@@ -18,7 +18,6 @@ public class BaseClass {
 
   public static WebDriver driver;   // declared the driver object
 
-
   @BeforeMethod
   public static WebDriver getDriver(){
     if(driver == null) {
@@ -48,11 +47,11 @@ public class BaseClass {
       }
       driver.get(ConfigurationReader.getProperty("url"));
       driver.manage().window().maximize();
-      driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+      driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Constants.implicitlyWaitTime));
+      PageInitializer.initialize();
     }
     return driver;
   }
-
 
   @AfterMethod
   public void methodName() {
