@@ -17,6 +17,8 @@ import org.testng.annotations.Test;
 @Listeners(ListenersTestNG.class)
 public class myHomePageTest extends commonMethods{
 
+
+    //test1
     @Test(priority = 1)
     public void homePageWitheThreeSlidersOnly(){
       commonMethods.clickOnNav(Constants.shopString, hp.navBar);
